@@ -1,22 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,600;1,700&display=swap');
 
 * {
     box-sizing: border-box;
-    font-family: 'Inter',sans-serif;
+    scroll-behavior: smooth;
 }
+
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif; */
 
 body {
     margin: 0;
     top: 0;
 }
 
+/* scrollbar */
+*::-webkit-scrollbar {
+    width: 15px;
+    height: auto;
+    border-radius: 24px;
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #217BF4;
+    border-radius: 24px;
+}
+
+/* ::-webkit-scrollbar-thumb:hover {
+    background-color: ;
+} */
+
+body::-webkit-scrollbar-track {
+    border-radius: 24px;
+    display: none;
+}
+
+::-webkit-scrollbar-corner {
+    border-radius: 24px;
+}
+
 .d-flex {
     display: flex;
 }
+
+.nav-scrolled {
+    background-color: #fff;
+    box-shadow: var(--primary-) 0px 3px 6px;
+    transition: 0.5s ease-out;
+    color: black;
+}
+
 /* Navbar */
 
 header {
-    background-image: url(./image/landscape-wajag-island-surrounded-by-sea-cloudy-sky-indonesia.jpg);
+    font-family: 'Inter',sans-serif;
+    background-image: url(./image/bg1.jpg);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     background-size: cover;
@@ -25,11 +64,19 @@ header {
 nav {
     top: 0;
     position: sticky;
-    padding: 13px;
+    padding: 10 5px;
+    align-items: center;
     justify-content: space-around;
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     /* background-color: #FFFFFF; */
+    color: white;
+}
+
+.logsign {
+    display: flex;
+    gap: 38px;
+    align-items: center;
 }
 
 header ul {
@@ -59,8 +106,10 @@ a:hover {
 .slog-container {
     height: 70vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
     /* background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%); */
 }
 
@@ -73,31 +122,106 @@ h1 {
 .slogan {
     display: flex;
     flex-direction: column;
-    max-width: 515px;
+    max-width: 600px;
+    text-align: center;
     gap: 18px;
 }
 
-/* reason */
-.reason-container {
-    height: 70vh;
+header .btn-sl {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 100px;
-    padding: 100px 0px;
 }
 
-.reason {
-    max-width: 515px;
+.btn-2 {
+    padding: 16px 45px;
+    background: #217BF4;
+    border-radius: 70px;
+    color: #fff;
 }
 
-.play-img {
-    display: flex;
-    gap: 16px;
-}
-
-.play23 {
+/* feature */
+#feature {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 140px 0px 100px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cardf-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.card-f {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 330px;
+    height: 306px;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card-f h4 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.card-f i {
+    display: inline-block;
+    align-self: center;
+    color: #217BF4;
+    padding: 10px;
+    font-size: 70px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-f p {
+    font-size: 16px;
+    max-width: 260px;
+}
+
+/* destination */
+
+#destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#destination h2 {
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.cardd-container {
+    display: flex;
+}
+
+#destination a {
+    align-self: center;
+}
+
+.card-d {
+    border-radius: 20px;
+    width: 330px;
+    height: 330px;
+}
+
+.card-d .num {
+    display: flex;   
+    align-items: center;
+    gap: 10px;
+}
+
+.card-d .num div {
+    width: 87px;
+    height: 3px;
+    background-color: #217BF4;
 }
