@@ -89,6 +89,7 @@ nav li {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 14px;
     color: #fff;
+    transition: 0.3s ease-out
 }
 
 a:hover {
@@ -100,15 +101,13 @@ a:hover {
 header {
     font-family: 'Inter',sans-serif;
     background-image: url(./image/bg1.jpg);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     background-size: cover;
     height: 100vh;
 }
 
 /* header */
 .slog-container {
-    height: 70vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,6 +140,11 @@ header .btn-sl {
     background: #217BF4;
     border-radius: 70px;
     color: #fff;
+    transition: 0.3s ease-out;
+}
+
+.btn-2:hover, .a-btn:hover {
+    background-color: #0050E6;
 }
 
 /* feature */
