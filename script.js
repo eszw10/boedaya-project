@@ -7,3 +7,10 @@ window.onscroll = () => {
         navbar.classList.remove("nav-scrolled");
     }
 }
+
+let grayscale = document.getElementById('img-gray');
+grayscale.forEach(Element => {
+    Element.addEventListener('mouseover',()=> {
+        grayscale.classList.remove('img-grayscaled')
+    })
+});

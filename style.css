@@ -98,7 +98,7 @@ nav li a:active {
 
 .a-btn {
     align-self: center;
-    padding: 16px 45px;
+    padding:11px 31px;
     font-weight: 600;
     background: #217BF4;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -349,7 +349,7 @@ header .btn-sl {
     align-items: center;
     justify-content: center;
     max-width: 342px;
-    max-height: 241px;
+    max-height: 241px !important;
     overflow: hidden;
     border-radius: 20px 20px 0px 0px;
 }
@@ -371,6 +371,14 @@ header .btn-sl {
 .img-about {
     display: flex;
     gap: 33px;
+}
+
+.img-grayscaled {
+    filter: grayscale(100%);
+}
+
+.img-grayscaled:hover {
+    filter: none;
 }
 
 .img-1 {
@@ -488,3 +496,32 @@ header .btn-sl {
     justify-content: space-around;
     align-items: center;
 }
+
+
+/* underline-animation */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2.5px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+  #217BF4;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    border-radius: 5px;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
