@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 .log-container {
     font-family: 'Inter', sans-serif;
     display: flex;
@@ -58,7 +62,8 @@ a {
 }
 
 .log-form input:focus {
-    border: 1px solid #217BF4;
+    outline: none;
+    border: 3px solid #217BF4;
 }
 
 .log-form input {
@@ -79,3 +84,11 @@ a {
     border: none;
     margin-bottom: 50px;
 }
+
+.log-form button:hover {
+    background-color: #217BF4;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+

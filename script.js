@@ -8,9 +8,4 @@ window.onscroll = () => {
     }
 }
 
-let grayscale = document.getElementById('img-gray');
-grayscale.forEach(Element => {
-    Element.addEventListener('mouseover',()=> {
-        grayscale.classList.remove('img-grayscaled')
-    })
-});
+

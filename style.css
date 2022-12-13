@@ -63,7 +63,7 @@ nav {
     top: 0;
     position: fixed;
     width: 100%;
-    padding: 10 5px;
+    padding: 5px 5px;
     align-items: center;
     justify-content: space-around;
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
@@ -72,6 +72,7 @@ nav {
     z-index: 100;
     color: white;
 }
+
 
 .logsign {
     display: flex;
