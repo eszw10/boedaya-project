@@ -3,7 +3,7 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    transition: 0.3s ease-out
+    transition: 0.3s ease-out;
 }
 
 /* font-family: 'Inter', sans-serif;
@@ -26,6 +26,7 @@ a:hover {
     font-family: 'Inter', sans-serif;
     display: flex;
     gap: 148px;
+    height: 100vh;
 }
 
 .log-desc {
@@ -74,21 +75,33 @@ a:hover {
     margin-bottom: auto;
 }
 
-.log-form button {
+#btn-log, #btn-sign {
     background: #F1F1F1;
     box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
     border-radius: 14px;
-    width: 174px;
-    height: 62px;
+    padding: 20px 60px;
+    /* width: 174px;
+    height: 62px; */
     font-size: 18px;
     border: none;
     margin-bottom: 50px;
+    text-align: center;
+    
 }
 
-.log-form button:hover {
+#btn-log:hover, #btn-sign:hover {
     background-color: #217BF4;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
+}
+
+#sign {
+    color: #80B5DD;
+    font-weight: 700;
+}
+
+#sign:hover{
+    color: #217BF4;
 }
 

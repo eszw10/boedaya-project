@@ -10,18 +10,32 @@
 </head>
 <body>
     <main class="log-container">
-        <img src="./image/login-dash.svg" alt="">
+        <img src="./image/login-dash.jpg" alt="" style="max-width: 595px;object-fit: cover;">
         <div class="log-desc">
             <img id="logo"src="./image/logo-png.png" alt="bromo">
             <form action="" class="log-form">
                 <h1>LOGIN</h1>
                 <input type="text" placeholder="Email" name="email" id="email" max="50">
-                <input type="password" placeholder="Password" name="password">
-                <p id="notice"></p>
-                <button>Login</button>
-                <p style="font-weight: 400;font-size: 18px;">Don't have an account? <a href="./signup.html" style="color: #80B5DD;font-weight: 700;">Sign Up</a></p>
+                <input type="password" placeholder="Password" name="password" id="password">
+                <p id="notice" style="align-self: flex-start;color: red;"></p>
+                <a id="btn-sign">Login</a>
+                <p style="font-weight: 400;font-size: 18px;">Don't have an account? <a id="sign" href="./signup.html">Sign Up</a></p>
             </form>
         </div>
     </main>
+    <script>
+        let email = document.getElementById('email')
+        let pw = document.getElementById('password')
+        let name = document.getElementById('name')
+        let sign = document.getElementById('btn-sign')
+        let notice = document.getElementById('notice')
+        sign.addEventListener('click', ()=> {
+            if(email.value == 'admin' && pw.value == 'admin') {
+                sign.href = './index.html'
+            } else {
+                notice.innerText = 'Loh salah!'
+            }
+        })
+    </script>
 </body>
 </html>

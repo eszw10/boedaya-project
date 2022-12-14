@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="logstyle.css">
+    <script src="./script.js" defer></script>
     <script src="https://kit.fontawesome.com/621e2dd331.js" crossorigin="anonymous"></script>
     <title>Sign Up</title>
 </head>
 <body>
     <main class="log-container">
-        <img id="logo" src="./image/sign-dash.svg" alt="">
+        <img id="logo" src="./image/sign-dash.jpg" alt="" style="max-width: 595px;object-fit: cover;max-height: 920px;">
         <div class="log-desc">
             <img id="dash"src="./image/logo-png.png" alt="bromo">
             <form action="" class="log-form">
@@ -18,11 +19,25 @@
                 <input type="text" placeholder="Name" name="name" id="name" max="100">
                 <input type="text" placeholder="Email" name="email" id="email" max="50">
                 <input type="password" placeholder="Password" name="password">
-                <p id="notice"></p>
-                <button>Sign Up</button>
-                <p style="font-weight: 400;font-size: 18px;">Already have an account? <a href="./login.html" style="color: #80B5DD;font-weight: 700;">Login</a></p>
+                <p id="notice" style="color: red;"></p>
+                <a id="btn-sign">Sign Up</a>
+                <p style="font-weight: 400;font-size: 18px;">Already have an account? <a id="sign" href="./login.html">Login</a></p>
             </form>
         </div>
     </main>
+    <script>
+        let email = document.getElementById('email')
+        let pw = document.getElementById('password')
+        let name = document.getElementById('name')
+        let sign = document.getElementById('btn-sign')
+        let notice = document.getElementById('notice')
+        sign.addEventListener('click', ()=> {
+            notice.innerText = `halo mas ${name.value}! monggo login`
+            sign.innerText = 'Login'
+            sign.addEventListener('click', ()=> {
+                sign.href = './login.html'
+            })
+        })
+    </script>
 </body>
 </html>
