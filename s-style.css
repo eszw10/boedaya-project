@@ -26,7 +26,6 @@ a {
     backdrop-filter: blur(10px);
     background-color: #0005;
     transition: 0.5s ease-out;
-    color: white;
 }
 
 nav {
@@ -115,6 +114,7 @@ a:hover {
 .hover-underline-animation {
     display: inline-block;
     position: relative;
+    color: white;
   }
   
   .hover-underline-animation:after {
@@ -137,8 +137,8 @@ a:hover {
     transform-origin: bottom left;
   }
 
-  /* selling */
-.cards-container{
+  /* container */
+.cards-container, .box-gray-container{
     display: flex;
     gap: 38px;
 }
@@ -188,7 +188,7 @@ a:hover {
     background-color: #0050E6;
 }
 
-#recommendation, #inspiration, #tws {
+#gray, #recommendation, #tws {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -197,21 +197,6 @@ a:hover {
 
 #recommendation {
     height: 100vh;
-}
-
-#inspiration {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Poppins', sans-serif;
-    height: 80vh;
-    padding-bottom: 114px;
-}
-
-.img-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    gap: 45px;
 }
 
 .wts-container, .user {
@@ -229,12 +214,15 @@ a:hover {
 }
 
 .say {
+    display: flex;
+    flex-direction: column;
     width:502px;
     height:511px;
     background-color: #FFFFFF;
     padding: 20px 17px;
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    gap: 90px;
 }
 
 
@@ -250,4 +238,49 @@ a:hover {
 
 .akun p:last-of-type {
     margin: 0;
+}
+
+#gray {
+    height: 60vh;
+}
+
+.bullet {
+    display: flex;
+    gap: 25px;
+}
+
+.poin {
+    padding: 10px 10px;
+    background: #D9D9D9;
+    border-radius: 35px;
+    width: 136px;
+    text-align: center;
+}
+
+
+.box-gray-container .box-g {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 296px;
+    height: 167px;
+}
+
+.box-gray-container .box-g .box {
+    width: 296px;
+    height: 126px;
+    background: #D9D9D9;
+    border-radius: 20px;
+}
+
+.box-square-container {
+    display: flex;
+    gap: 21px;
+}
+
+.box-s {
+    width: 294px;
+    height: 213px;
+    background: #D9D9D9;
+    border-radius: 20px;
 }

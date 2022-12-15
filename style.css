@@ -17,7 +17,7 @@ body {
 
 /* scrollbar */
 *::-webkit-scrollbar {
-    width: 15px;
+    width: 17px;
     height: auto;
     border-radius: 24px;
     display: none;
@@ -32,13 +32,9 @@ body {
     background-color: ;
 } */
 
-body::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     border-radius: 24px;
-    display: none;
-}
-
-::-webkit-scrollbar-corner {
-    border-radius: 24px;
+    background-color: transparent;
 }
 
 .d-flex {

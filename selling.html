@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="se-style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/621e2dd331.js" crossorigin="anonymous"></script>
+    <title>Selling</title>
+</head>
+<body>
+    <nav class="d-flex" id="nav">
+        <img id="logo" src="./image/logo-png.png" alt="logo" style="margin: 0px;">
+        <ul>
+            <li><a class="hover-underline-animation nava" href="./index.html">Home</a></li>
+            <li><a class="hover-underline-animation nava" href="#destination">Destination</a></li>
+            <li><a class="hover-underline-animation nava" href="#food">Food</a></li>
+            <li><a class="hover-underline-animation nava" href="#selling">Selling by Region</a></li>
+        </ul>
+        <div class="logsign">
+            <a href="./login.html" class="hover-underline-animation nava" style="font-weight: 600;">Login</a>
+            <a href="./signup.html"class="a-btn">Sign Up</a>
+        </div>
+    </nav>
+    <main>
+        <section class="secart">
+            <div class="search-bar">
+                <input type="text">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <img src="./image/vector/cart.svg" alt="">
+        </section>
+        <section class="content">
+            <div class="filter-container">
+                <div class="filter">
+                    <img src="./image/vector/filter.svg" alt="">
+                    <h3>FILTER</h3>
+                </div>
+                <div class="filtrasi">
+                    <label for="Location"> Location
+                        <br>
+                        <input type="checkbox" id="shop" value="Bali" class="inline" style="margin-top: 19px;">Bali
+                        <br>
+                        <input type="checkbox" id="tips" value="Malang" class="inline">Malang
+                        <br>
+                        <input type="checkbox" id="delivery" value="Lombok" class="inline">Lombok
+                    </label>
+                    <select name="place" id="dropdown" style="display: block;" itemid="dropdown">
+                        <option value="pilihan">Others</option>
+                        <option value="Lumajang">Lumajang</option>
+                        <option value="Surabaya">Surabaya</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="anonym">lain-lain</option>
+                    </select>
+                    <div class="hr-drop"></div>
+                </div>
+                <div class="filtrasi">
+                    <label for="Location"> Categories
+                        <br>
+                        <input type="checkbox" id="shop" value="Bali" class="inline" style="margin-top: 19px;">Bali
+                        <br>
+                        <input type="checkbox" id="tips" value="Malang" class="inline">Malang
+                        <br>
+                        <input type="checkbox" id="delivery" value="Lombok" class="inline">Lombok
+                    </label>
+                    <select name="place" id="dropdown" style="display: block;" itemid="dropdown">
+                        <option value="pilihan">Others</option>
+                        <option value="Lumajang">Lumajang</option>
+                        <option value="Surabaya">Surabaya</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="anonym">lain-lain</option>
+                    </select>
+                    <div class="hr-drop"></div>
+                </div>
+                <div class="filtrasi">
+                    <label for="Location"> Type
+                        <br>
+                        <input type="checkbox" id="shop" value="Bali" class="inline" style="margin-top: 19px;">Bali</input>
+                        <br>
+                        <input type="checkbox" id="tips" value="Malang" class="inline">Malang
+                        <br>
+                        <input type="checkbox" id="delivery" value="Lombok" class="inline">Lombok
+                    </label>
+                    <select name="place" id="dropdown" style="display: block;" itemid="dropdown">
+                        <option value="pilihan">Others</option>
+                        <option value="Lumajang">Lumajang</option>
+                        <option value="Surabaya">Surabaya</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="anonym">lain-lain</option>
+                    </select>
+                    <div class="hr-drop"></div>
+                </div>
+                <div class="prize">
+                    <p>Prize</p>
+                    <div class="minmax">
+                        <p>Min</p>
+                        <div></div>
+                        <p>Max</p>
+                    </div>
+                    <p id="apply">Apply</p>
+                    <div class="hr-drop" style="margin: 0;"></div>
+                    <p id="del">Delete All Filter</p>
+                </div>
+            </div>
+            <div class="cards-container">
+                <div class="card-s">
+                    <div class="img-s">
+                        <img src="./image/selling/2.svg" alt="sell1">
+                    </div>
+                    <p>Rp 35.000,00</p>
+                    <h3>Kain Tapis</h3>
+                    <p>Tapis merupakan kain khas yang berasal dari daerah 
+                        Lampung dan mengandung benang emas</p>
+                </div>
+                <div class="card-s">
+                    <div class="img-s">
+                        <img src="./image/selling/1.svg" alt="sell2">
+                    </div>
+                    <p>Rp 35.000,00</p>
+                    <h3>Topeng Barong Bali</h3>
+                    <p>Barong merupakan tarian tradisional Bali yang ditandai dengan topeng dan kostum badan bagi orang yang  menarikannya.</p>
+                </div>
+                <div class="card-s">
+                    <div class="img-s">
+                        <img src="./image/selling/3.svg" alt="sell1">
+                    </div>
+                    <p>Rp 35.000,00</p>
+                    <h3>Selendang Remo</h3>
+                    <p>Selendang ini biasa digunakan untuk properti tari Remo. TariRemo dan selendang ini berasal dari Jombang, Jawa Timur.</p>
+                </div>
+                <div class="card-s">
+                    <div class="img-s">
+                        <img src="./image/selling/4.svg" alt="sell2">
+                    </div>
+                    <p>Rp 35.000,00</p>
+                    <h3>Tameng Dayak</h3>
+                    <p>Tameng Suku Dayak merupakan salah satu budaya yang diciptakan oleh kreatif dari penduduk asli Pulau Kalimantan.</p>
+                </div>
+                <div class="card-s">
+                    <div class="img-s">
+                        <img src="./image/selling/3.svg" alt="sell1">
+                    </div>
+                    <p>Rp 35.000,00</p>
+                    <h3>Selendang Remo</h3>
+                    <p>Selendang ini biasa digunakan untuk properti tari Remo. TariRemo dan selendang ini berasal dari Jombang, Jawa Timur.</p>
+                </div><div class="card-s">
+                    <div class="img-s">
+                        <img src="./image/selling/3.svg" alt="sell1">
+                    </div>
+                    <p>Rp 35.000,00</p>
+                    <h3>Selendang Remo</h3>
+                    <p>Selendang ini biasa digunakan untuk properti tari Remo. TariRemo dan selendang ini berasal dari Jombang, Jawa Timur.</p>
+                </div><div class="card-s">
+                    <div class="img-s">
+                        <img src="./image/selling/3.svg" alt="sell1">
+                    </div>
+                    <p>Rp 35.000,00</p>
+                    <h3>Selendang Remo</h3>
+                    <p>Selendang ini biasa digunakan untuk properti tari Remo. TariRemo dan selendang ini berasal dari Jombang, Jawa Timur.</p>
+                </div><div class="card-s">
+                    <div class="img-s">
+                        <img src="./image/selling/3.svg" alt="sell1">
+                    </div>
+                    <p>Rp 35.000,00</p>
+                    <h3>Selendang Remo</h3>
+                    <p>Selendang ini biasa digunakan untuk properti tari Remo. TariRemo dan selendang ini berasal dari Jombang, Jawa Timur.</p>
+                </div><div class="card-s">
+                    <div class="img-s">
+                        <img src="./image/selling/3.svg" alt="sell1">
+                    </div>
+                    <p>Rp 35.000,00</p>
+                    <h3>Selendang Remo</h3>
+                    <p>Selendang ini biasa digunakan untuk properti tari Remo. TariRemo dan selendang ini berasal dari Jombang, Jawa Timur.</p>
+                </div><div class="card-s">
+                    <div class="img-s">
+                        <img src="./image/selling/3.svg" alt="sell1">
+                    </div>
+                    <p>Rp 35.000,00</p>
+                    <h3>Selendang Remo</h3>
+                    <p>Selendang ini biasa digunakan untuk properti tari Remo. TariRemo dan selendang ini berasal dari Jombang, Jawa Timur.</p>
+                </div><div class="card-s">
+                    <div class="img-s">
+                        <img src="./image/selling/3.svg" alt="sell1">
+                    </div>
+                    <p>Rp 35.000,00</p>
+                    <h3>Selendang Remo</h3>
+                    <p>Selendang ini biasa digunakan untuk properti tari Remo. TariRemo dan selendang ini berasal dari Jombang, Jawa Timur.</p>
+                </div><div class="card-s">
+                    <div class="img-s">
+                        <img src="./image/selling/3.svg" alt="sell1">
+                    </div>
+                    <p>Rp 35.000,00</p>
+                    <h3>Selendang Remo</h3>
+                    <p>Selendang ini biasa digunakan untuk properti tari Remo. TariRemo dan selendang ini berasal dari Jombang, Jawa Timur.</p>
+                </div><div class="card-s">
+                    <div class="img-s">
+                        <img src="./image/selling/3.svg" alt="sell1">
+                    </div>
+                    <p>Rp 35.000,00</p>
+                    <h3>Selendang Remo</h3>
+                    <p>Selendang ini biasa digunakan untuk properti tari Remo. TariRemo dan selendang ini berasal dari Jombang, Jawa Timur.</p>
+                </div><div class="card-s">
+                    <div class="img-s">
+                        <img src="./image/selling/3.svg" alt="sell1">
+                    </div>
+                    <p>Rp 35.000,00</p>
+                    <h3>Selendang Remo</h3>
+                    <p>Selendang ini biasa digunakan untuk properti tari Remo. TariRemo dan selendang ini berasal dari Jombang, Jawa Timur.</p>
+                </div><div class="card-s">
+                    <div class="img-s">
+                        <img src="./image/selling/3.svg" alt="sell1">
+                    </div>
+                    <p>Rp 35.000,00</p>
+                    <h3>Selendang Remo</h3>
+                    <p>Selendang ini biasa digunakan untuk properti tari Remo. TariRemo dan selendang ini berasal dari Jombang, Jawa Timur.</p>
+                </div>
+            </div>
+        </section>
+        <section class="pagin-container">
+            <div class="pagination">
+                <p>&#60;</p>
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+                <p>...</p>
+                <p>&#62;</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="prefooter">
+            <div class="foot-desc">
+                <div class="sec">
+                    <h3>Home</h3>
+                    <p>Home</p>
+                    <p>Destination</p>
+                    <p>Food</p>
+                    <p>Selling by Region</p>
+                </div>
+                <div class="sec">
+                    <h3>Destination</h3>
+                    <p>Lombok</p>
+                    <p>Lampung</p>
+                    <p>Raja Ampat</p>
+                    <p>Help Center</p>
+                </div>
+                <div class="sec">
+                    <h3>Food</h3>
+                    <p>Pindang</p>
+                    <p>papeda</p>
+                    <p>Sate Klatak</p>
+                    <p>Soto Garing</p>
+                </div>
+                <div class="sec">
+                    <h3>selling by Region</h3>
+                    <p>Tapis</p>
+                    <p>Reog</p>
+                    <p>Blangkon</p>
+                    <p>Batik</p>
+                </div>
+            </div>
+            <img src="./image/Wonderful_Indonesia_logo.svg" alt="">
+        </div>
+        <footer id="footer">
+            <img src="./image/logo.svg" alt="logo" id="logo">
+            <p style="color: white;">&#169;2022 Boedaya Corp - All rights reserved</p>
+            <img src="./image/Social icon.svg" alt="sosmed">
+        </footer>
+    </footer>
+</body>
+</html>
