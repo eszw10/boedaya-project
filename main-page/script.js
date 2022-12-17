@@ -1,5 +1,4 @@
 let navbar = document.getElementById("nav");
-let nava = document.getElementsByClassName("nava")
 window.onscroll = () => {
     "use strict";
     if(document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
@@ -11,5 +10,13 @@ window.onscroll = () => {
 
 function peringatan() {
     alert('Silahkan Sign Up atau Login terlebih dahulu!')
+}
+
+function goHome() {
+    location.href = '../main-page/user.html'
+}
+
+function home() {
+    location.href = '../main-page/index.html'
 }
 
