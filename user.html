@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="u-style.css">
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/621e2dd331.js" crossorigin="anonymous"></script>
-    <title>boedaya.com</title>
+    <title>User Page</title>
 </head>
 <body>
-    <nav class="d-flex" id="nav">
+    <nav class="d-flex" id="nav" style="background: rgba(255, 255, 255, 0.69);">
         <img id="logo" src="./image/logo-png.png" alt="logo" style="margin: 0px;">
         <ul>
             <li><a class="hover-underline-animation" href="#">Home</a></li>
@@ -18,9 +18,9 @@
             <li><a class="hover-underline-animation" href="#food">Food</a></li>
             <li><a class="hover-underline-animation" href="#selling">Selling by Region</a></li>
         </ul>
-        <div class="logsign">
-            <a href="./login.html" class="hover-underline-animation" style="font-weight: 600;">Login</a>
-            <a href="./signup.html"class="a-btn">Sign Up</a>
+        <div class="user">
+            <p>Erycson</p>
+           <img src="./image/team/son.png" alt="" height="30" width="30">
         </div>
     </nav>
     <header>
@@ -74,16 +74,18 @@
                     </div>
                     <p style="margin: 0;">Lampung &#183; Pahawang</p>
                 </div>
-                <div class="card-d">
-                    <div class="img-d">
-                        <img src="./image/destination/2.svg" alt="Borobudur">
+                <a href="./borobudur.html">
+                    <div class="card-d">
+                        <div class="img-d">
+                            <img src="./image/destination/2.svg" alt="Borobudur">
+                        </div>
+                        <div class="num">
+                            <p style="font-size: 40px;margin: 0;">02</p>
+                            <div></div>
+                        </div>
+                        <p style="margin: 0;">Magelang &#183; Borobudur</p>
                     </div>
-                    <div class="num">
-                        <p style="font-size: 40px;margin: 0;">02</p>
-                        <div></div>
-                    </div>
-                    <p style="margin: 0;">Magelang &#183; Borobudur</p>
-                </div>
+                </a>
                 <div class="card-d">
                     <div class="img-d">
                         <img src="./image/destination/3.svg" alt="Kuta">
@@ -105,27 +107,29 @@
                     <p style="margin: 0;">Probolinggo &#183; Bromo Mountain</p>
                 </div>
             </div>
-            <a class="btn-2"style="margin-top: 70px;" href="#destination" onclick="peringatan()">View more       <i class="fa-solid fa-chevron-right" style="color: white;"></i></a>
+            <a class="btn-2"style="margin-top: 70px;" href="./destination.html">View more       <i class="fa-solid fa-chevron-right" style="color: white;"></i></a>
         </section>
         <section id="food">
             <h1>Regional Food</h1>
             <p>List of typical foods in each region</p>
             <div class="cardfo-container">
-                <div class="card-food">
-                    <div class="img-f">
-                        <img src="./image/food/bakso bang.png" alt="Pindang">
+                <a href="./bakso.html">
+                    <div class="card-food">
+                        <div class="img-f">
+                            <img src="./image/food/bakso bang.png" alt="Pindang">
+                        </div>
+                        <div class="bintang" style="color: #FFCA56;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Bakso Son Haji Sony</h3>
+                        <p>Makanan Khas Daerah Lampung, Bakso Son Haji Sony adalah menu wajib saat mengunjungi Lampung</p>
+                        <p>Rp 18.000,00</p>
                     </div>
-                    <div class="bintang" style="color: #FFCA56;">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h3>Bakso Son Haji Sony</h3>
-                    <p>Makanan Khas Daerah Lampung, Bakso Son Haji Sony adalah menu wajib saat mengunjungi Lampung</p>
-                    <p>Rp 18.000,00</p>
-                </div>
+                </a>
                 <div class="card-food">
                     <div class="img-f">
                         <img src="./image/food/2.svg" alt="sate">
@@ -202,20 +206,22 @@
                     <p>Rp 17.000,00</p>
                 </div>
             </div>
-            <a href="#food" onclick="peringatan()" class="btn-2" style="margin-top: 70px;">View more       <i class="fa-solid fa-chevron-right" style="color: white;"></i></a>
+            <a href="./food.html" class="btn-2" style="margin-top: 70px;">View more       <i class="fa-solid fa-chevron-right" style="color: white;"></i></a>
         </section>
         <section id="selling">
             <h2 style="font-size: 40px; margin-bottom: 0px;padding-left: 109px;">Selling by Region</h2>
             <p style="font-size: 16px;padding-left: 109px">Variety of typical souvenirs  of each region</p>
             <div class="cards-container" style="padding-left: 109px">
-                <div class="card-s">
-                    <div class="img-s">
-                        <img src="./image/selling/7.png" alt="sell2">
+                <a href="./selling.html" style="text-decoration: none; color: black;">
+                    <div class="card-s">
+                        <div class="img-s">
+                            <img src="./image/selling/7.png" alt="sell2">
+                        </div>
+                        <p>Rp 35.000,00</p>
+                        <h3>Penari Gandrung Kembang Menur</h3>
+                        <p>Tari Gandrung yang merupakan tarian khas Banyuwangi yang dibawakan sebagai perwujudan rasa syukur</p>
                     </div>
-                    <p>Rp 35.000,00</p>
-                    <h3>Penari Gandrung Kembang Menur</h3>
-                    <p>Tari Gandrung yang merupakan tarian khas Banyuwangi yang dibawakan sebagai perwujudan rasa syukur</p>
-                </div>
+                </a>
                 <div class="card-s">
                     <div class="img-s">
                         <img src="./image/selling/1.svg" alt="sell2">
@@ -268,7 +274,7 @@
                         Keris dalam istilah Jawa sering disebut duwung atau tosan aji.</p>
                 </div>
             </div>
-            <a href="#selling" onclick="peringatan()" class="btn-2"style="margin-top: 70px;">View more       <i class="fa-solid fa-chevron-right" style="color: white;"></i></a>
+            <a href="./selling.html" class="btn-2"style="margin-top: 70px;">View more       <i class="fa-solid fa-chevron-right" style="color: white;"></i></a>
         </section>
         <section id="about">
             <div class="img-about" id="img-gray">

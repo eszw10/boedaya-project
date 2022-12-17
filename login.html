@@ -31,10 +31,9 @@
         let notice = document.getElementById('notice')
         sign.addEventListener('click', ()=> {
             if(email.value == 'admin' && pw.value == 'admin') {
-                sign.href = './index.html'
+                sign.href = './user.html'
             } else {
-                notice.innerText = 'Loh salah!'
-                alert("Kontol")
+                notice.innerText = 'Masukkan email dan password yang benar!'
             }
         })
     </script>
