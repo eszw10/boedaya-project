@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="logstyle.css">
+    <link rel="stylesheet" href="./logstyle.css">
     <script src="https://kit.fontawesome.com/621e2dd331.js" crossorigin="anonymous"></script>
     <title>login</title>
 </head>
 <body>
     <main class="log-container">
-        <img src="./image/login-dash.jpg" alt="" style="max-width: 595px;object-fit: cover;">
+        <img src="../image/login-dash.jpg" alt="" style="max-width: 595px;object-fit: cover;">
         <div class="log-desc">
-            <img id="logo"src="./image/logo-png.png" alt="bromo">
+            <img id="logo"src="../image/logo-png.png" alt="bromo">
             <form action="" class="log-form">
                 <h1>LOGIN</h1>
-                <input type="text" placeholder="Email" name="email" id="email" max="50">
-                <input type="password" placeholder="Password" name="password" id="password">
+                <input type="text" placeholder="Email" name="email" id="email" max="50" required>
+                <input type="password" placeholder="Password" name="password" id="password" required>
                 <p id="notice" style="align-self: flex-start;color: red;"></p>
                 <a id="btn-sign">Login</a>
-                <p style="font-weight: 400;font-size: 18px;">Don't have an account? <a id="sign" href="./signup.html">Sign Up</a></p>
+                <p style="font-weight: 400;font-size: 18px;">Don't have an account? <a id="sign" href="../signup-page/signup.html">Sign Up</a></p>
             </form>
         </div>
     </main>
@@ -31,7 +31,9 @@
         let notice = document.getElementById('notice')
         sign.addEventListener('click', ()=> {
             if(email.value == 'admin' && pw.value == 'admin') {
-                sign.href = './user.html'
+                sign.href = '../main-page/user.html'
+            } else if((email.value == null && pw.value == null) || (email.value == '' && pw.value == '')) {
+                notice.innerText = 'Tolong isi data di atas terlebih dahulu!'
             } else {
                 notice.innerText = 'Masukkan email dan password yang benar!'
             }

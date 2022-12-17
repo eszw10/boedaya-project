@@ -3,7 +3,8 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    transition: 0.3s ease-out
+    transition: 0.3s ease-out;
+    text-align: justify;
 }
 
 
@@ -44,7 +45,7 @@ nav {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background-color: white;
     z-index: 100;
-    color: black;
+    color: white;
 }
 
 
@@ -100,7 +101,7 @@ a:hover {
 
 /* header */
 header {
-    background-image: url(./image/h1.png);
+    background-image: url(../image/h2.png);
     background-size: cover;
     height: 100vh;
 }
@@ -112,6 +113,15 @@ header {
     align-items: center;
     font-family: 'Poppins', sans-serif;
 }
+
+#destination1 p {
+    margin-bottom: 0;
+}
+
+#destination1 p:nth-of-type(2) {
+    margin-bottom: 10px;
+}
+
 section h1{
     width: 1240px;
 }
@@ -129,40 +139,10 @@ section p{
     font-family: 'Poppins', sans-serif;
 }
 
-#destination2 P {
+#destination2 p {
     margin-top: 0;
 }
 
-section h2{
-    width: 1240px;
-}
-
-section p{
-    width: 1240px;
-}
-
-#destination3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-}
-section h2{
-    width: 1240px;
-}
-
-section p{
-    width: 1240px;
-}
-
-#destination4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-}
 section h2{
     width: 1240px;
 }

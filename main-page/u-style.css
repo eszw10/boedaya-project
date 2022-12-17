@@ -101,7 +101,7 @@ a:hover {
 /* header */
 header {
     font-family: 'Inter',sans-serif;
-    background-image: url(./image/hero.svg);
+    background-image: url(../image/hero.svg);
     background-size: cover;
     height: 100vh;
 }

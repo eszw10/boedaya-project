@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="logstyle.css">
-    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="../login-page/logstyle.css">
+    <script src="../main-page/script.js" defer></script>
     <script src="https://kit.fontawesome.com/621e2dd331.js" crossorigin="anonymous"></script>
     <title>Sign Up</title>
 </head>
 <body>
     <main class="log-container">
-        <img id="logo" src="./image/sign-dash.jpg" alt="" style="max-width: 595px;object-fit: cover;max-height: 920px;">
+        <img id="logo" src="../image/sign-dash.jpg" alt="" style="max-width: 595px;object-fit: cover;max-height: 920px;">
         <div class="log-desc">
-            <img id="dash"src="./image/logo-png.png" alt="bromo">
+            <img id="dash"src="../image/logo-png.png" alt="bromo">
             <form action="" class="log-form">
                 <h1>SIGN UP</h1>
                 <input type="text" placeholder="Name" name="name" id="name" max="100">
@@ -21,7 +21,7 @@
                 <input type="password" placeholder="Password" name="password">
                 <p id="notice" style="align-self: flex-start;color: red;"></p>
                 <a id="btn-sign">Sign Up</a>
-                <p style="font-weight: 400;font-size: 18px;">Already have an account? <a id="sign" href="./login.html">Login</a></p>
+                <p style="font-weight: 400;font-size: 18px;">Already have an account? <a id="sign" href="../login-page/login.html">Login</a></p>
             </form>
         </div>
     </main>
@@ -32,12 +32,17 @@
         let sign = document.getElementById('btn-sign')
         let notice = document.getElementById('notice')
         sign.addEventListener('click', ()=> {
-            notice.innerText = `halo ${name.value}! silahkan login`
-            sign.innerText = 'Login'
-            sign.addEventListener('click', ()=> {
-                sign.href = './login.html'
+                if((email.value == null && pw.value == null) || (email.value == '' && pw.value == '')) {
+                    notice.innerText = 'Tolong isi data di atas terlebih dahulu!'
+                    alert('Tolong isi data di atas terlebih dahulu!')
+                } else {
+                    notice.innerText = `halo ${name.value}! silahkan login`
+                    sign.innerText = 'Login'
+                    sign.addEventListener('click', ()=> {
+                    sign.href = '../login-page/login.html'
+                    })
+                }   
             })
-        })
     </script>
 </body>
 </html>

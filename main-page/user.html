@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./u-style.css">
+    <script src="./script.js" defer></script>
     <script src="https://kit.fontawesome.com/621e2dd331.js" crossorigin="anonymous"></script>
-    <title>boedaya.com</title>
+    <title>User Page</title>
 </head>
 <body>
-    <nav class="d-flex" id="nav">
-        <img id="logo" src="./image/logo-png.png" alt="logo" style="margin: 0px;">
+    <nav class="d-flex" id="nav" style="background: rgba(255, 255, 255, 0.69);">
+        <img id="logo" src="../image/logo-png.png" alt="logo" style="margin: 0px;">
         <ul>
             <li><a class="hover-underline-animation" href="#">Home</a></li>
             <li><a class="hover-underline-animation" href="#destination">Destination</a></li>
             <li><a class="hover-underline-animation" href="#food">Food</a></li>
             <li><a class="hover-underline-animation" href="#selling">Selling by Region</a></li>
         </ul>
-        <div class="logsign">
-            <a href="./login.html" class="hover-underline-animation" style="font-weight: 600;">Login</a>
-            <a href="./signup.html"class="a-btn">Sign Up</a>
+        <div class="user">
+            <p>Erycson</p>
+           <img src="../image/team/son.png" alt="" height="30" width="30">
         </div>
     </nav>
     <header>
@@ -66,7 +66,7 @@
             <div class="cardd-container" style="padding-left: 103px;">
                 <div class="card-d">
                     <div class="img-d">
-                        <img style="width: 100%;"src="./image/destination/1.svg" alt="pahawang">
+                        <img style="width: 100%;"src="../image/destination/1.svg" alt="pahawang">
                     </div>
                     <div class="num">
                         <p style="font-size: 40px;margin: 0;">01</p>
@@ -74,19 +74,21 @@
                     </div>
                     <p style="margin: 0;">Lampung &#183; Pahawang</p>
                 </div>
+                <a href="../destination-page/borobudur.html">
+                    <div class="card-d">
+                        <div class="img-d">
+                            <img src="../image/destination/2.svg" alt="Borobudur">
+                        </div>
+                        <div class="num">
+                            <p style="font-size: 40px;margin: 0;">02</p>
+                            <div></div>
+                        </div>
+                        <p style="margin: 0;">Magelang &#183; Borobudur</p>
+                    </div>
+                </a>
                 <div class="card-d">
                     <div class="img-d">
-                        <img src="./image/destination/2.svg" alt="Borobudur">
-                    </div>
-                    <div class="num">
-                        <p style="font-size: 40px;margin: 0;">02</p>
-                        <div></div>
-                    </div>
-                    <p style="margin: 0;">Magelang &#183; Borobudur</p>
-                </div>
-                <div class="card-d">
-                    <div class="img-d">
-                        <img src="./image/destination/3.svg" alt="Kuta">
+                        <img src="../image/destination/3.svg" alt="Kuta">
                     </div>
                     <div class="num">
                         <p style="font-size: 40px;margin: 0;">03</p>
@@ -96,7 +98,7 @@
                 </div>
                 <div class="card-d">
                     <div class="img-d">
-                        <img src="./image/destination/4.svg" alt="Bromo">
+                        <img src="../image/destination/4.svg" alt="Bromo">
                     </div>
                     <div class="num">
                         <p style="font-size: 40px;margin: 0;">04</p>
@@ -105,30 +107,32 @@
                     <p style="margin: 0;">Probolinggo &#183; Bromo Mountain</p>
                 </div>
             </div>
-            <a class="btn-2"style="margin-top: 70px;" href="#destination" onclick="peringatan()">View more       <i class="fa-solid fa-chevron-right" style="color: white;"></i></a>
+            <a class="btn-2"style="margin-top: 70px;" href="../destination-page/destination.html">View more       <i class="fa-solid fa-chevron-right" style="color: white;"></i></a>
         </section>
         <section id="food">
             <h1>Regional Food</h1>
             <p>List of typical foods in each region</p>
             <div class="cardfo-container">
+                <a href="../food-page/bakso.html">
+                    <div class="card-food">
+                        <div class="img-f">
+                            <img src="../image/food/bakso bang.png" alt="Pindang">
+                        </div>
+                        <div class="bintang" style="color: #FFCA56;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Bakso Son Haji Sony</h3>
+                        <p>Makanan Khas Daerah Lampung, Bakso Son Haji Sony adalah menu wajib saat mengunjungi Lampung</p>
+                        <p>Rp 18.000,00</p>
+                    </div>
+                </a>
                 <div class="card-food">
                     <div class="img-f">
-                        <img src="./image/food/bakso bang.png" alt="Pindang">
-                    </div>
-                    <div class="bintang" style="color: #FFCA56;">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h3>Bakso Son Haji Sony</h3>
-                    <p>Makanan Khas Daerah Lampung, Bakso Son Haji Sony adalah menu wajib saat mengunjungi Lampung</p>
-                    <p>Rp 18.000,00</p>
-                </div>
-                <div class="card-food">
-                    <div class="img-f">
-                        <img src="./image/food/2.svg" alt="sate">
+                        <img src="../image/food/2.svg" alt="sate">
                     </div>
                     <div class="bintang" style="color: #FFCA56;">
                         <i class="fa-solid fa-star"></i>
@@ -143,7 +147,7 @@
                 </div>
                 <div class="card-food">
                     <div class="img-f">
-                        <img src="./image/food/3.svg" alt="rendang">
+                        <img src="../image/food/3.svg" alt="rendang">
                     </div>
                     <div class="bintang" style="color: #FFCA56;">
                         <i class="fa-solid fa-star"></i>
@@ -158,7 +162,7 @@
                 </div>
                 <div class="card-food">
                     <div class="img-f">
-                        <img src="./image/food/4.svg" alt="gudeg">
+                        <img src="../image/food/4.svg" alt="gudeg">
                     </div>
                     <div class="bintang" style="color: #FFCA56;">
                         <i class="fa-solid fa-star"></i>
@@ -173,7 +177,7 @@
                 </div>
                 <div class="card-food">
                     <div class="img-f">
-                        <img src="./image/food/5.svg" alt="ayam">
+                        <img src="../image/food/5.svg" alt="ayam">
                     </div>
                     <div class="bintang" style="color: #FFCA56;">
                         <i class="fa-solid fa-star"></i>
@@ -188,7 +192,7 @@
                 </div>
                 <div class="card-food">
                     <div class="img-f">
-                        <img src="./image/food/6.svg" alt="gence">
+                        <img src="../image/food/6.svg" alt="gence">
                     </div>
                     <div class="bintang" style="color: #FFCA56;">
                         <i class="fa-solid fa-star"></i>
@@ -202,23 +206,25 @@
                     <p>Rp 17.000,00</p>
                 </div>
             </div>
-            <a href="#food" onclick="peringatan()" class="btn-2" style="margin-top: 70px;">View more       <i class="fa-solid fa-chevron-right" style="color: white;"></i></a>
+            <a href="../food-page/food.html" class="btn-2" style="margin-top: 70px;">View more       <i class="fa-solid fa-chevron-right" style="color: white;"></i></a>
         </section>
         <section id="selling">
             <h2 style="font-size: 40px; margin-bottom: 0px;padding-left: 109px;">Selling by Region</h2>
             <p style="font-size: 16px;padding-left: 109px">Variety of typical souvenirs  of each region</p>
             <div class="cards-container" style="padding-left: 109px">
-                <div class="card-s">
-                    <div class="img-s">
-                        <img src="./image/selling/7.png" alt="sell2">
+                <a href="../selling-page/selling.html" style="text-decoration: none; color: black;">
+                    <div class="card-s">
+                        <div class="img-s">
+                            <img src="../image/selling/7.png" alt="sell2">
+                        </div>
+                        <p>Rp 35.000,00</p>
+                        <h3>Penari Gandrung Kembang Menur</h3>
+                        <p>Tari Gandrung yang merupakan tarian khas Banyuwangi yang dibawakan sebagai perwujudan rasa syukur</p>
                     </div>
-                    <p>Rp 35.000,00</p>
-                    <h3>Penari Gandrung Kembang Menur</h3>
-                    <p>Tari Gandrung yang merupakan tarian khas Banyuwangi yang dibawakan sebagai perwujudan rasa syukur</p>
-                </div>
+                </a>
                 <div class="card-s">
                     <div class="img-s">
-                        <img src="./image/selling/1.svg" alt="sell2">
+                        <img src="../image/selling/1.svg" alt="sell2">
                     </div>
                     <p>Rp 999.900,00</p>
                     <h3>Topeng Barong Bali</h3>
@@ -226,7 +232,7 @@
                 </div>
                 <div class="card-s">
                     <div class="img-s">
-                        <img src="./image/selling/3.svg" alt="sell1">
+                        <img src="../image/selling/3.svg" alt="sell1">
                     </div>
                     <p>Rp 44.500,00</p>
                     <h3>Selendang Remo</h3>
@@ -234,7 +240,7 @@
                 </div>
                 <div class="card-s">
                     <div class="img-s">
-                        <img src="./image/selling/4.svg" alt="sell2">
+                        <img src="../image/selling/4.svg" alt="sell2">
                     </div>
                     <p>Rp 132.000,00</p>
                     <h3>Tameng Dayak</h3>
@@ -242,7 +248,7 @@
                 </div>
                 <div class="card-s">
                     <div class="img-s">
-                        <img src="./image/selling/2.svg" alt="sell2">
+                        <img src="../image/selling/2.svg" alt="sell2">
                     </div>
                     <p>Rp 2.000.000,00</p>
                     <h3>Kain Tapis</h3>
@@ -251,7 +257,7 @@
                 </div>
                 <div class="card-s">
                     <div class="img-s">
-                        <img src="./image/selling/5.svg" alt="sell2">
+                        <img src="../image/selling/5.svg" alt="sell2">
                     </div>
                     <p>Rp 35.000,00</p>
                     <h3>Topeng Rawana</h3>
@@ -260,7 +266,7 @@
                 </div>
                 <div class="card-s">
                     <div class="img-s">
-                        <img src="./image/selling/6.svg" alt="sell2">
+                        <img src="../image/selling/6.svg" alt="sell2">
                     </div>
                     <p>Rp 99.000,00</p>
                     <h3>Keris Melayu</h3>
@@ -268,15 +274,15 @@
                         Keris dalam istilah Jawa sering disebut duwung atau tosan aji.</p>
                 </div>
             </div>
-            <a href="#selling" onclick="peringatan()" class="btn-2"style="margin-top: 70px;">View more       <i class="fa-solid fa-chevron-right" style="color: white;"></i></a>
+            <a href="../selling-page/selling.html" class="btn-2"style="margin-top: 70px;">View more       <i class="fa-solid fa-chevron-right" style="color: white;"></i></a>
         </section>
         <section id="about">
             <div class="img-about" id="img-gray">
                 <div class="img-1">
-                    <img class="img-grayscaled" src="./image/About/1.svg" alt="nasi kuning">
-                    <img class="img-grayscaled" src="./image/About/2.svg" alt="">
+                    <img class="img-grayscaled" src="../image/About/1.svg" alt="nasi kuning">
+                    <img class="img-grayscaled" src="../image/About/2.svg" alt="">
                 </div>
-                <img class="img-grayscaled" src="./image/About/3.svg" alt="">
+                <img class="img-grayscaled" src="../image/About/3.svg" alt="">
             </div>
             <div class="about-container">
                 <h2>Why must Boedaya ?</h2>
@@ -295,33 +301,33 @@
             <h2>Meet The Team</h2>
             <div class="team-container">
                 <div class="card-team">
-                    <img src="./image/team/1.png" alt="Son">
+                    <img src="../image/team/1.png" alt="Son">
                     <p>Erycson Z.W</p>
                     <p>Front-End Developer</p>
                     <div class="sosmed-p">
-                        <a style="color: black;" href="https://web.facebook.com/avery.fold"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a style="color: black;" href="https://www.instagram.com/eryc_s.z.w/"><i class="fa-brands fa-square-instagram"></i></a>
-                        <a style="color: black;" href="https://www.linkedin.com/in/erycson-zulkarnain-wijaya-a01a75169/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a style="color: black;" href="https://web.facebook.com/avery.fold" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a style="color: black;" href="https://www.instagram.com/eryc_s.z.w/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a style="color: black;" href="https://www.linkedin.com/in/erycson-zulkarnain-wijaya-a01a75169/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="card-team">
-                    <img src="./image/team/ray.png" alt="Ray">
+                    <img src="../image/team/ray.png" alt="Ray">
                     <p>Rayhan Wahyu T.</p>
                     <p>UI/UX Designer</p>
                     <div class="sosmed-p">
-                        <a style="color: black;" href="https://www.facebook.com/rayhan.wahyutaufiqurrahman.5/"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a style="color: black;" href="http://instagram.com/ray_tqr"><i class="fa-brands fa-square-instagram"></i></a>
-                        <a style="color: black;" href="https://www.linkedin.com/in/rayhan-wahyu-taufiqurrahman-762024259/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a style="color: black;" href="https://www.facebook.com/rayhan.wahyutaufiqurrahman.5/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a style="color: black;" href="http://instagram.com/ray_tqr" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a style="color: black;" href="https://www.linkedin.com/in/rayhan-wahyu-taufiqurrahman-762024259/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="card-team">
-                    <img src="./image/team/3.png" alt="Rak">
+                    <img src="../image/team/3.png" alt="Rak">
                     <p>Rakha Hanif M.</p>
                     <p>Project Manager</p>
                     <div class="sosmed-p">
-                        <a style="color: black;" href="https://www.facebook.com/rakha.hanif"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a style="color: black;" href="http://instagram.com/rakhnf_m"><i class="fa-brands fa-square-instagram"></i></a>
-                        <a style="color: black;" href="https://www.linkedin.com/in/rakha-hanif-maheswara-935161251"><i class="fa-brands fa-linkedin"></i></a>
+                        <a style="color: black;" href="https://www.facebook.com/rakha.hanif" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a style="color: black;" href="http://instagram.com/rakhnf_m" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a style="color: black;" href="https://www.linkedin.com/in/rakha-hanif-maheswara-935161251" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -333,9 +339,9 @@
                 <div class="sec">
                     <h3>Home</h3>
                     <a href="#"><p>Home</p></a>
-                    <a href="./destination.html"><p>Destination</p></a>
-                    <a href="./food.html"><p>Food</p></a>
-                    <a href="./selling.html"><p>Selling by Region</p></a>
+                    <a href="../destination-page/destination.html"><p>Destination</p></a>
+                    <a href="../food-page/food.html"><p>Food</p></a>
+                    <a href="../selling-page/selling.html"><p>Selling by Region</p></a>
                 </div>
                 <div class="sec">
                     <h3>Destination</h3>
@@ -359,12 +365,12 @@
                     <p>Batik</p>
                 </div>
             </div>
-            <img src="./image/Wonderful_Indonesia_logo.svg" alt="">
+            <img src="../image/Wonderful_Indonesia_logo.svg" alt="">
         </div>
         <footer id="footer">
-            <img src="./image/logo.svg" alt="logo" id="logo">
+            <img src="../image/logo.svg" alt="logo" id="logo">
             <p style="color: white;">&#169;2022 Boedaya Corp - All rights reserved</p>
-            <img src="./image/Social icon.svg" alt="sosmed">
+            <img src="../image/Social icon.svg" alt="sosmed">
         </footer>
     </footer>
 </body>
