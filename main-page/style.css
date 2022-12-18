@@ -351,6 +351,7 @@ header .btn-sl {
 .card-s p, .card-s h3 {
     padding-left: 15px;
     margin: 0;
+    padding-right: 10px;
 }
 
 .card-s p:first-of-type {
