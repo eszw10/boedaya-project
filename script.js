@@ -17,7 +17,7 @@ function goHome() {
 }
 
 function home() {
-    location.href = '../main-page/index.html'
+    location.href = '../index.html'
 }
 
 function borobudur() {
