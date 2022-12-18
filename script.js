@@ -20,6 +20,10 @@ function home() {
     location.href = '../index.html'
 }
 
+function onHome() {
+    location.href = '#'
+}
+
 function borobudur() {
     location.href = '../destination-page/borobudur.html'
 }
